@@ -1,59 +1,48 @@
-azul = #22BCE0
-gris_oscuro = #444
-gris_texto = #7A7A7A
-naranja = #DD4F24
-
-@font-face {
-        font-family: 'iconitos';
-        src:url('../fonts/icomoon.eot');
-        src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-                url('../fonts/icomoon.ttf') format('truetype'),
-                url('../fonts/icomoon.woff') format('woff'),
-                url('../fonts/icomoon.svg#icomoon') format('svg');
-        font-weight: normal;
-        font-style: normal;
-}
+$azul: #22BCE0
+$gris_oscuro: #444
+$gris_texto: #7A7A7A
+$naranja: #DD4F24
 
 a
-        color naranja
+        color: $naranja
 
 body
-        background #E8E8E8
-        color gris_oscuro
-        font-family Arial
-        font-size 16px
+        background: #E8E8E8
+        color: $gris_oscuro
+        font-family: Arial
+        font-size: 16px
 
 footer
-        background naranja
-        color rgba(white,0.5)
-        padding 1em 0
-        text-align center
-        width 100%
+        background: $naranja
+        color: rgba(white,0.5)
+        padding: 1em 0
+        text-align: center
+        width: 100%
 
         h3
-                font-size 14px
-                font-weight normal
+                font-size: 14px
+                font-weight: normal
 
                 strong
-                        display block
+                        display: block
 
                 .mejor
                         &:before
                         &:after
-                                content " - "
+                                content: " - "
 
 
 header
-        background gris_oscuro
-        box-shadow 0 5px 0 rgba(0,0,0,0.2)
-        color white
-        overflow hidden
-        padding 0.5em
-        position relative
-        z-index 1
+        background: $gris_oscuro
+        box-shadow: 0 5px 0 rgba(0,0,0,0.2)
+        color: white
+        overflow: hidden
+        padding: 0.5em
+        position: relative
+        z-index: 1
 
         .logo
-                border-right 1px solid azul
+                border-right 1px solid $azul
                 float left
                 width 60px 
 
@@ -64,14 +53,14 @@ header
                 margin 0 60px 0 70px
 
                 .filtro
-                        color azul
+                        color $azul
                         font-size 14px
                         font-style italic
                         font-weight bold
                         text-decoration none
 
                 .publicar
-                        background naranja
+                        background $naranja
                         color white
                         float right
                         font-style italic
@@ -107,7 +96,7 @@ header
                                 border-radius 50%
                 
                 .flechita
-                        background naranja
+                        background $naranja
                         color white
                         display block
                         padding 2px
@@ -126,7 +115,7 @@ header
                                 text-shadow 1px 1px 0px black
 
 nav
-        background azul
+        background $azul
         border-left 15px solid white
         position relative
 
@@ -163,11 +152,11 @@ nav
                 background white
                 border-radius 0 0 0.5em 0.5em
                 box-shadow 2px 2px 10px rgba(black, 0.5)
-                color gris_texto
+                color $gris_texto
                 margin-bottom 1em
 
                 .acciones
-                        border-top 3px solid azul
+                        border-top 3px solid $azul
                         padding 0.5em
                         overflow hidden
 
@@ -175,7 +164,7 @@ nav
                                 float right
 
                                 .comentarios
-                                        background gris_oscuro
+                                        background $gris_oscuro
                                         border-radius 3px
                                         color white
                                         margin 0 1em 0 0
@@ -215,7 +204,7 @@ nav
                                                 vertical-align bottom
 
                 .descripcion
-                        color gris_texto
+                        color $gris_texto
                         
                         .detalles
                                 height 160px
@@ -229,14 +218,14 @@ nav
                                         margin 0 1em 0 0
 
                                 .tag
-                                        background azul
+                                        background $azul
                                         border-radius 0.5em
                                         color white
                                         padding 0.2em 0.5em
                                         text-decoration none
 
                                 .titulo
-                                        color gris_oscuro
+                                        color $gris_oscuro
                                         font-size 18px
                                         font-style italic
                                         margin 0
@@ -272,3 +261,13 @@ nav
                         vertical-align top
                         &:nth-child(odd)
                                 margin-right 2%
+@font-face {
+        font-family: "iconitos";
+        src:url("../fonts/icomoon.eot");
+        src:url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"),
+                url("../fonts/icomoon.ttf") format("truetype"),
+                url("../fonts/icomoon.woff") format("woff"),
+                url("../fonts/icomoon.svg#icomoon") format("svg");
+        font-weight: normal;
+        font-style: normal;
+}
